@@ -54,8 +54,21 @@ public interface ProviderService {
      */
     Set<String> findServices();
 
+    /**
+     * Get dubbo version by service name and application
+     *
+     * @param application application name
+     * @param serviceName service name
+     * @return the dubbo version
+     */
     String findServiceVersion(String serviceName, String application);
 
+    /**
+     * Get dubbo version by application
+     *
+     * @param application application name
+     * @return the dubbo version
+     */
     String findVersionInApplication(String application);
 
     List<String> findAddresses();
